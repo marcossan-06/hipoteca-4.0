@@ -47,7 +47,6 @@ const PricingSection = () => {
         "Comparación premium",
         "Asesor personal dedicado",
         "Soporte 24/7",
-        "API de integración",
         "Reportes personalizados",
         "Notificaciones en tiempo real",
         "Acceso a ofertas exclusivas"

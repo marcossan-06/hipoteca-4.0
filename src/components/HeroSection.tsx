@@ -7,6 +7,11 @@ const HeroSection = () => {
     simulatorSection?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const scrollToPricing = () => {
+    const simulatorSection = document.getElementById('pricing');
+    simulatorSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-blue-700 to-purple-800 text-white">
       {/* Background Elements */}
@@ -43,8 +48,10 @@ const HeroSection = () => {
               Simular Ahora Gratis
               <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
             </button>
-            
-            <button className="group inline-flex items-center px-8 py-4 text-lg font-semibold rounded-2xl transition-all duration-300 border-2 border-white text-white hover:bg-white hover:text-blue-700">
+
+            <button
+              onClick={scrollToPricing}
+              className="group inline-flex items-center px-8 py-4 text-lg font-semibold rounded-2xl transition-all duration-300 border-2 border-white text-white hover:bg-white hover:text-blue-700">
               <BarChart3 className="w-6 h-6 mr-3" />
               Ver Planes
             </button>
@@ -60,7 +67,7 @@ const HeroSection = () => {
                 Simulaciones realizadas
               </div>
             </div>
-            
+
             <div className="group p-8 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-105">
               <div className="text-4xl lg:text-5xl font-bold text-yellow-300 mb-2">
                 2.8%
@@ -69,7 +76,7 @@ const HeroSection = () => {
                 Mejor tipo medio
               </div>
             </div>
-            
+
             <div className="group p-8 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-105">
               <div className="flex items-center justify-center mb-2">
                 <Clock className="w-8 h-8 text-yellow-300 mr-2" />
